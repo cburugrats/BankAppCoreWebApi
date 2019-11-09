@@ -29,3 +29,18 @@ C:\Users\Muhammet\Desktop\Github Projeleri\RugratWebApi2\BankAppCoreWebApi\BankA
 C:\Users\Muhammet\Desktop\Github Projeleri\RugratWebApi2\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.RazorTargetAssemblyInfo.cache
 C:\Users\Muhammet\Desktop\Github Projeleri\RugratWebApi2\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.dll
 C:\Users\Muhammet\Desktop\Github Projeleri\RugratWebApi2\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.pdb
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\bin\Release\netcoreapp2.1\BankAppCoreWebApi.deps.json
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\bin\Release\netcoreapp2.1\BankAppCoreWebApi.runtimeconfig.json
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\bin\Release\netcoreapp2.1\BankAppCoreWebApi.runtimeconfig.dev.json
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\bin\Release\netcoreapp2.1\BankAppCoreWebApi.dll
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\bin\Release\netcoreapp2.1\BankAppCoreWebApi.pdb
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.csprojAssemblyReference.cache
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.RazorAssemblyInfo.cache
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.RazorAssemblyInfo.cs
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.AssemblyInfoInputs.cache
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.AssemblyInfo.cs
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.dll
+C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Release\netcoreapp2.1\BankAppCoreWebApi.pdb

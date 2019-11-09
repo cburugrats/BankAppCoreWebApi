@@ -12580,11 +12580,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Muhammet\\Desktop\\Github Projeleri\\RugratWebApi2\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Muhammet\\Desktop\\Rugrats - 6.11.2019\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj",
       "projectName": "BankAppCoreWebApi",
-      "projectPath": "C:\\Users\\Muhammet\\Desktop\\Github Projeleri\\RugratWebApi2\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj",
+      "projectPath": "C:\\Users\\Muhammet\\Desktop\\Rugrats - 6.11.2019\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj",
       "packagesPath": "C:\\Users\\Muhammet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Muhammet\\Desktop\\Github Projeleri\\RugratWebApi2\\BankAppCoreWebApi\\BankAppCoreWebApi\\obj\\",
+      "outputPath": "C:\\Users\\Muhammet\\Desktop\\Rugrats - 6.11.2019\\BankAppCoreWebApi\\BankAppCoreWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

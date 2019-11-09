@@ -121,7 +121,7 @@ namespace BankAppCoreWebApi.Controllers
 					{
 						try
 						{
-							var sp_ParaCekme = db.Database.ExecuteSqlCommand("exec [sp_ParaCekme] {0},{1},{2},{3},{4},{5},{6}", "Bank", drawMoney.accountNo, drawMoney.Balance, 3, DateTime.Now, 1, "");
+							var sp_ParaCekme = db.Database.ExecuteSqlCommand("exec [sp_ParaCekme] {0},{1},{2},{3},{4},{5},{6}", drawMoney.accountNo, drawMoney.accountNo, drawMoney.Balance, 1, DateTime.Now, 1, "");
 							db.SaveChanges();
 						}
 						catch (Exception)
@@ -152,19 +152,19 @@ namespace BankAppCoreWebApi.Controllers
 				}
 				else
 				{
-					try
-					{
-						var sp_toDepositMoney = db.Database.ExecuteSqlCommand("exec [sp_ParaYatirma] {0},{1},{2},{3},{4},{5},{6}", toDepositMoney.accountNo, "Bank", toDepositMoney.Balance, 4, DateTime.Now,1,"");
+					//try
+					//{
+						var sp_toDepositMoney = db.Database.ExecuteSqlCommand("exec [sp_ParaYatirma] {0},{1},{2},{3},{4},{5},{6}", toDepositMoney.accountNo, toDepositMoney.accountNo, toDepositMoney.Balance,2 , DateTime.Now,1,"");
 						db.SaveChanges();
-					}
-					catch (Exception)
-					{
+						return 1;//Para başarıyla yatırıldı.
+					//}
+					//catch (Exception)
+					//{
 
-						return 0;//Veritabanına kaydedilirken hata oluştu!
-					}
+						return 2;//Veritabanına kaydedilirken hata oluştu!
+					//}
 				}				
-			}
-			return 1;//Para başarıyla yatırıldı.
+			}		
 		}
 		#endregion
 
