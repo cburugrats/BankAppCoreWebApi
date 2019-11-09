@@ -7,7 +7,7 @@ namespace BankAppCoreWebApi.Models
 {
 	public class UpdateUserModel
 	{
-		public int customerId { get; set; }
+		public long TcIdentityKey { get; set; }
 		public string userName { get; set; }
 		public string userPassword { get; set; }
 		public string firstname { get; set; }

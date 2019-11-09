@@ -49,21 +49,22 @@ namespace BankAppCoreWebApi.Controllers
 		{
 			using (var db = new RugratsDbContext())
 			{
-				if (!(updateModel.customerId>0))
+				User user = await db.Users.FirstOrDefaultAsync(x => x.TcIdentityKey == updateModel.TcIdentityKey);
+				if (user==null)
 				{
-					return 0;//Geçersiz customerId girdiniz!
-				}
-				User user = await db.Users.FirstOrDefaultAsync(x => x.customerId == updateModel.customerId);
-				Customer customer = await db.Customers.FirstOrDefaultAsync(x => x.Id == updateModel.customerId);
+					return 3;//Bu TC'ye kayıtlı kullanıcı bulunamadı!
+				}			
+				Customer customer = await db.Customers.FirstOrDefaultAsync(x => x.Id == user.customerId);
 				try
 				{
-					var transfer = db.Database.ExecuteSqlCommand("exec [sp_Bilgi] {0},{1},{2},{3},{4},{5},{6},{7}", updateModel.customerId, updateModel.userName, updateModel.userPassword, updateModel.firstname, updateModel.surname, updateModel.dateOfBirth, updateModel.phoneNumber, updateModel.eMail);
+					var transfer = db.Database.ExecuteSqlCommand("exec [sp_Bilgi] {0},{1},{2},{3},{4},{5},{6},{7}", user.customerId, updateModel.userName, updateModel.userPassword, updateModel.firstname, updateModel.surname, updateModel.dateOfBirth, updateModel.phoneNumber, updateModel.eMail);
 					return 1;
 				}
 				catch (Exception)
 				{
 					return 2;//Veritabanına kaydedilirken hata oluştu!
-				}							}
+				}
+			}
 		}
 		#endregion
 	}
