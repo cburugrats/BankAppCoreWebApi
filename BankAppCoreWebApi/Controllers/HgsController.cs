@@ -28,7 +28,7 @@ namespace BankAppCoreWebApi.Controllers
 				{
 					if (account.netBalance >= registerModel.balance)
 					{
-						string url = "https://bankapphgswebapi.azurewebsites.net/api/user";
+						string url = "https://rugratshgs.azurewebsites.net/api/user";
 						HgsUserModel userModel=new HgsUserModel{ balance=registerModel.balance};
 						int response= await HttpRequestAsync(userModel, "post", url);
 						if (response>=1000)
@@ -56,7 +56,7 @@ namespace BankAppCoreWebApi.Controllers
 		[HttpGet("{HgsNo}")]
 		public async Task<HgsUserModel> GetByIdAsync(int HgsNo)
 		{
-			string url = "https://bankapphgswebapi.azurewebsites.net/api/user/"+HgsNo;
+			string url = "https://rugratshgs.azurewebsites.net/api/user/" + HgsNo;
 			HgsUserModel result = new HgsUserModel();
 			using (var client = new HttpClient())
 			{
@@ -88,7 +88,7 @@ namespace BankAppCoreWebApi.Controllers
 				{
 					if (account.netBalance >= registerModel.balance)
 					{
-						string url = "https://bankapphgswebapi.azurewebsites.net/api/user/toDepositMoney";
+						string url = "https://rugratshgs.azurewebsites.net/api/user/toDepositMoney";
 						HgsUserModel userModel = new HgsUserModel { balance = registerModel.balance,HgsNo=registerModel.HgsNo };
 						int returnValue = await HttpRequestAsync(userModel, "put", url);
 						if (returnValue == 1)
