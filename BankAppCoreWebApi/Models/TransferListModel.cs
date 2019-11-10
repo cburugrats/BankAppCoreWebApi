@@ -12,6 +12,6 @@ namespace BankAppCoreWebApi.Models
 		public string transferType { get; set; }
         public decimal balanceSent { get; set; }
         public string statement { get; set; }
-        public DateTime? realizationTime { get; set; }
+        public DateTime realizationTime { get; set; }
 	}
 }

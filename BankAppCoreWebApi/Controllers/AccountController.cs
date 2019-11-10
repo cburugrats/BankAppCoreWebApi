@@ -152,17 +152,17 @@ namespace BankAppCoreWebApi.Controllers
 				}
 				else
 				{
-					//try
-					//{
-						var sp_toDepositMoney = db.Database.ExecuteSqlCommand("exec [sp_ParaYatirma] {0},{1},{2},{3},{4},{5},{6}", toDepositMoney.accountNo, toDepositMoney.accountNo, toDepositMoney.Balance,2 , DateTime.Now,1,"");
+					try
+					{
+						var sp_toDepositMoney = db.Database.ExecuteSqlCommand("exec [sp_ParaYatirma] {0},{1},{2},{3},{4},{5},{6}", toDepositMoney.accountNo, toDepositMoney.accountNo, toDepositMoney.Balance, 2, DateTime.Now, 1, "");
 						db.SaveChanges();
 						return 1;//Para başarıyla yatırıldı.
-					//}
-					//catch (Exception)
-					//{
+					}
+					catch (Exception)
+					{
 
 						return 2;//Veritabanına kaydedilirken hata oluştu!
-					//}
+					}
 				}				
 			}		
 		}
