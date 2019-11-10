@@ -127,7 +127,6 @@ namespace BankAppCoreWebApi.Controllers
 		{
 			using (var db = new RugratsDbContext())
 			{
-
 				/*var a = (from m in db.MoneyTransfers
 						 join tt in db.TransferTypes on m.transferTypeId equals tt.Id
 						 where m.senderAccountNo == accountNo || m.receiverAccountNo == accountNo
@@ -138,8 +137,7 @@ namespace BankAppCoreWebApi.Controllers
 							 senderAccountNo = m.senderAccountNo,
 							 createdDate = m.createdDate,
 							 transferType=tt.transferType,
-                             statement=m.statement
-                             
+                             statement=m.statement                         
 						 }).ToList();*/
 				var transferList = db.Query<TransferListModel>().FromSql("exec [sp_TransferListeleme] {0}", accountNo);
 				return transferList.ToList();
