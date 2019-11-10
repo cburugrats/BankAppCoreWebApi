@@ -95,7 +95,7 @@ namespace BankAppCoreWebApi.Controllers
 						{
 							account.balance -= registerModel.balance;
 							account.netBalance -= registerModel.balance;
-							var transfer = db.Database.ExecuteSqlCommand("exec [sp_Transfer] {0},{1},{2},{3},{4},{5}", registerModel.accountNo, "Hgs-" + registerModel.HgsNo, registerModel.balance, 5, DateTime.Now, "Hgs'ye Para Yatırıldı");
+							var transfer = db.Database.ExecuteSqlCommand("exec [sp_Transfer] {0},{1},{2},{3},{4},{5}", registerModel.accountNo, registerModel.accountNo, registerModel.balance, 5, DateTime.Now, "Hgs'ye Para Yatırıldı");
 							db.SaveChanges();
 						}
 						return returnValue;
