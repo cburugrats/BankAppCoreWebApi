@@ -47,7 +47,7 @@
 ### HgsController
 ----
 
-Base api url= <a href="https://bankappcorewebapirugrats.azurewebsites.net/api/">https://bankappcorewebapirugrats.azurewebsites.net/api<a>
+Base api url= <a href="https://bankappcorewebapirugrats.azurewebsites.net/api/">https://rugratswebapi.azurewebsites.net/api<a>
 
 [Register Hgs User](#Register-Hgs-User)
 
