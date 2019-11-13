@@ -9,7 +9,9 @@
 ----
 
 [Get User By UserId](#Get-User-By-UserId)
-[Get UpdateUser By TcIdentityKey](#Get-Update-User-By-TcIdentityKey)
+
+[Get UpdateUser By TcIdentityKey](#Get-UpdateUser-By-TcIdentityKey)
+
 [Update User and Customer Information By TcIdentityKey](#Update-User-and-Customer-Information)
 
 **Get User By UserId**
