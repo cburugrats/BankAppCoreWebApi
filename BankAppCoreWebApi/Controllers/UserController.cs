@@ -43,7 +43,7 @@ namespace BankAppCoreWebApi.Controllers
 		#endregion GetUserById
 
 		#region Update User and Customer Informations
-		// POST api/login
+		// PUT api/hgs/updateUser
 		[HttpPut("updateUser")]
 		public async Task<int> PutUserAsync([FromBody] UpdateUserModel updateModel)
 		{
@@ -64,6 +64,35 @@ namespace BankAppCoreWebApi.Controllers
 				{
 					return 2;//Veritabanına kaydedilirken hata oluştu!
 				}
+			}
+		}
+		#endregion
+
+		#region Get Update User By TcIdentityKey
+		// GET api/user/
+		[HttpGet("getUpadateUser/{TcIdentityKey}")]
+		public async Task<ActionResult<UpdateUserModel>> GetAsync(long TcIdentityKey)
+		{
+			using (var db = new RugratsDbContext())
+			{
+				var tempUser = await db.Users.Where(x=> x.TcIdentityKey == TcIdentityKey).FirstOrDefaultAsync();
+
+				if (tempUser == null)
+				{
+					return null;
+				}
+				else
+				{
+					var tempCustomer = await db.Customers.Where(x => x.Id == tempUser.customerId).FirstOrDefaultAsync();
+					if (tempCustomer != null)
+					{
+						UpdateUserModel updateUserModel = new UpdateUserModel { userName = tempUser.userName, userPassword = tempUser.userPassword, TcIdentityKey = tempUser.TcIdentityKey, firstname = tempCustomer.firstname, surname = tempCustomer.surname, eMail = tempCustomer.eMail, dateOfBirth = tempCustomer.dateOfBirth, phoneNumber = tempCustomer.phoneNumber };
+						return updateUserModel;
+					}
+					else
+						return null; 
+				}
+				
 			}
 		}
 		#endregion

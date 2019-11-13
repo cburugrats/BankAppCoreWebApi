@@ -56,6 +56,10 @@ namespace BankAppCoreWebApi.Controllers
 		[HttpGet("{HgsNo}")]
 		public async Task<HgsUserModel> GetByIdAsync(int HgsNo)
 		{
+			if (HgsNo==null)
+			{
+				return null;
+			}
 			string url = "https://rugratshgs.azurewebsites.net/api/user/" + HgsNo;
 			HgsUserModel result = new HgsUserModel();
 			using (var client = new HttpClient())
