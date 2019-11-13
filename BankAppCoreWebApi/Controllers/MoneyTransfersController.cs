@@ -45,7 +45,7 @@ namespace BankAppCoreWebApi.Controllers
                                 MoneyTransfers moneyTransfers = new MoneyTransfers();
                                 moneyTransfers.senderAccountNo = senderAccount.accountNo;
                                 moneyTransfers.receiverAccountNo = receiverAccount.accountNo;
-                                moneyTransfers.realizationTime = havaleModel.realizationTime;
+                                moneyTransfers.realizationTime = DateTime.Now;
                                 moneyTransfers.statement = havaleModel.statement;
                                 moneyTransfers.transferTypeId = 3;
                                 moneyTransfers.balanceSent = havaleModel.amount;
@@ -104,7 +104,7 @@ namespace BankAppCoreWebApi.Controllers
 						receiverAccoount.netBalance += virmanModel.amount;
 						try
 						{						
-							var transferList = db.Database.ExecuteSqlCommand("exec [sp_Transfer] {0},{1},{2},{3},{4},{5}", virmanModel.senderAccountNo,virmanModel.receiverAccountNo,virmanModel.amount,4,virmanModel.realizationTime.ToShortDateString(),virmanModel.statement);
+							var transferList = db.Database.ExecuteSqlCommand("exec [sp_Transfer] {0},{1},{2},{3},{4},{5}", virmanModel.senderAccountNo,virmanModel.receiverAccountNo,virmanModel.amount,4,DateTime.Now.ToShortDateString(),virmanModel.statement);
 							db.SaveChanges();
 							return 1;//Para gönderme işlemi başarılı.
 						}
