@@ -10,7 +10,7 @@
 
 [Get User By UserId](#Get-User-By-UserId)
 [Get UpdateUser By TcIdentityKey](#Get-Update-User-By-TcIdentityKey)
-[Update User and Customer Information By TcIdentityKey](#Put-Update-User-By-TcIdentityKey)
+[Update User and Customer Information By TcIdentityKey](#Update-User-and-Customer-Information)
 
 **Get User By UserId**
 
@@ -45,7 +45,7 @@
 
 [Back to Top](#Controllers)
 
-[Get UpdateUser By TcIdentityKey](#Get-Update-User-By-TcIdentityKey)
+
 
 **Get UpdateUser By TcIdentityKey**
 
@@ -89,7 +89,7 @@
 
 [Back to Top](#Controllers)
 
-### Update User and Customer Information(#Put-Update-User-By-TcIdentityKey)
+### Update User and Customer Information
   Returns json data about a request.
 
 * **URL**
