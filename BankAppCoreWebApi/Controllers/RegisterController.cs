@@ -40,6 +40,8 @@ namespace BankAppCoreWebApi.Controllers
 				customer.dateOfBirth = registerModel.dateOfBirth;
 				customer.phoneNumber = registerModel.phoneNumber;
 				customer.eMail = registerModel.eMail;
+				customer.createdDate = DateTime.Now;
+				customer.updatedDate = DateTime.Now;
 				try
 				{
 					db.Customers.Add(customer);
@@ -47,8 +49,6 @@ namespace BankAppCoreWebApi.Controllers
 					int customerId = customer.Id;
 					User user = new User();
 					user.TcIdentityKey = registerModel.TcIdentityKey;
-					user.updatedDate = registerModel.updatedDate;
-					user.createdDate = registerModel.createdDate;
 					user.customerId = customerId;
 					user.userName = registerModel.userName;
 					user.userPassword = registerModel.userPassword;
