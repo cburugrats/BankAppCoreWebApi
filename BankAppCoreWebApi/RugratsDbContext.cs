@@ -17,7 +17,7 @@ namespace BankAppCoreWebApi
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer(@"tcp:rugratsvt.database.windows.net,1433;Initial Catalog=rugratsbank;Persist Security Info=False;User ID=Rugrat;Password=kayisi44;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+			optionsBuilder.UseSqlServer(@"tcp:rugratsvt.database.windows.net,1433;Initial Catalog=rugratsbank;Persist Security Info=False;User ID=Rugrat;Password=Pas314159;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
 		}
 
