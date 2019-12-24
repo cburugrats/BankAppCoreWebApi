@@ -111,7 +111,7 @@ namespace BankAppCoreWebApi.Controllers
 					return 6;//Hesap bulunamadı!
 			}
 		}
-		
+
 		#endregion To Deposit Money Hgs
 
 		//#region With Draw Money Hgs
@@ -123,6 +123,30 @@ namespace BankAppCoreWebApi.Controllers
 		//	return await HttpRequestAsync(userModel, "put", url);
 		//}
 		//#endregion With Draw Money Hgs
+
+		#region Credit
+		[HttpPost]
+		[Route("getCredit")]
+		public async Task<int> WithDrawMoneyAsync([FromBody] CreditModel credit)
+		{
+			string response = "";
+			string url = "https://ml-python.herokuapp.com/api";
+			using (var client = new HttpClient())
+			{
+				var result = new HttpResponseMessage();
+				client.BaseAddress = new Uri(url);
+				var content = new StringContent(JsonConvert.SerializeObject(credit), Encoding.UTF8, "application/json");
+				result = await client.PostAsync(url, content);
+				if (result.IsSuccessStatusCode)
+				{
+					result.EnsureSuccessStatusCode();
+					response = await result.Content.ReadAsStringAsync();
+				}
+			}
+
+			return Convert.ToInt32(response);
+		}
+		#endregion
 
 		#region Http Request 
 		public async Task<int> HttpRequestAsync([FromBody] HgsUserModel userModel, string requestType, string url)
