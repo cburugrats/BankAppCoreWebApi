@@ -42,7 +42,7 @@ namespace BankAppCoreWebApi
 			}
 
 			app.UseHttpsRedirection();
-            app.UseCors(x=>x.AllowAnyHeader().AllowAnyHeader().AllowAnyOrigin().AllowCredentials());
+            app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
 			app.UseMvc();
 		}
 	}
