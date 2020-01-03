@@ -72,3 +72,20 @@ C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebAp
 C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.RazorTargetAssemblyInfo.cache
 C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.dll
 C:\Users\Muhammet\Desktop\Rugrats - 6.11.2019\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.pdb
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\bin\Debug\netcoreapp2.1\BankAppCoreWebApi.deps.json
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\bin\Debug\netcoreapp2.1\BankAppCoreWebApi.runtimeconfig.json
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\bin\Debug\netcoreapp2.1\BankAppCoreWebApi.runtimeconfig.dev.json
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\bin\Debug\netcoreapp2.1\BankAppCoreWebApi.dll
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\bin\Debug\netcoreapp2.1\BankAppCoreWebApi.pdb
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.csprojAssemblyReference.cache
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.RazorAssemblyInfo.cache
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.RazorAssemblyInfo.cs
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.AssemblyInfoInputs.cache
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.AssemblyInfo.cs
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.dll
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\BankAppCoreWebApi.pdb
+C:\Users\msait\Desktop\BankAppCoreWebApi\BankAppCoreWebApi\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
