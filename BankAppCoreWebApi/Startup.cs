@@ -25,15 +25,16 @@ namespace BankAppCoreWebApi
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddCors();
-		}
+			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+        }
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
+            app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials().WithOrigins());
 			if (env.IsDevelopment())
-			{
+            {
 				app.UseDeveloperExceptionPage();
 			}
 			else
@@ -42,7 +43,6 @@ namespace BankAppCoreWebApi
 			}
 
 			app.UseHttpsRedirection();
-            app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
 			app.UseMvc();
 		}
 	}
