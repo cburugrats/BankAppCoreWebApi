@@ -32,8 +32,9 @@ namespace BankAppCoreWebApi
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
-            app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials().WithOrigins());
-			if (env.IsDevelopment())
+            app.UseCors(x=>x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials().WithOrigins("http://localhost:4200"));
+
+            if (env.IsDevelopment())
             {
 				app.UseDeveloperExceptionPage();
 			}
