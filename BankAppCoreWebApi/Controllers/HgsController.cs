@@ -21,20 +21,24 @@ namespace BankAppCoreWebApi.Controllers
 		[HttpPost]
 		public async Task<int> PostRegisterAsync([FromBody] HgsRegisterModel registerModel)
 		{
-			using (var db =new RugratsDbContext())
+			using (var db = new RugratsDbContext())
 			{
-				Account account	=  db.Accounts.Where(x => x.accountNo == registerModel.accountNo).FirstOrDefault();
+				Account account = db.Accounts.Where(x => x.accountNo == registerModel.accountNo).FirstOrDefault();
+				User user = db.Users.Where(x => x.TcIdentityKey == registerModel.TcNo).FirstOrDefault();
+				if (user == null)
+					return 7;//Bu TcNo'ya kayıtlı müşteri bulunamadı!
+
 				if (account != null)
 				{
 					if (account.netBalance >= registerModel.balance)
 					{
 						string url = "https://rugratshgs.azurewebsites.net/api/user";
-						HgsUserModel userModel=new HgsUserModel{ balance=registerModel.balance};
-						int response= await HttpRequestAsync(userModel, "post", url);
-						if (response>=1000)
+						HgsUserModel userModel = new HgsUserModel { balance = registerModel.balance, TcNo = registerModel.TcNo };
+						int response = await HttpRequestAsync(userModel, "post", url);
+						if (response >= 1000)
 						{
 							account.balance -= registerModel.balance;
-							account.netBalance -= registerModel.balance;					
+							account.netBalance -= registerModel.balance;
 							var transferList = db.Database.ExecuteSqlCommand("exec [sp_Transfer] {0},{1},{2},{3},{4},{5}", registerModel.accountNo, registerModel.accountNo, registerModel.balance, 5, DateTime.Now, "Hgs'ye Para Yatırıldı");
 							db.SaveChanges();
 						}
@@ -47,7 +51,7 @@ namespace BankAppCoreWebApi.Controllers
 				}
 				else
 					return 6;//Hesap bulunamadı!
-			}		
+			}
 		}
 		#endregion Register Hgs
 

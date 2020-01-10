@@ -10,6 +10,7 @@ namespace BankAppCoreWebApi.Models
 	{
 		[Key]
 		public int Id { get; set; }
+		public long TcNo { get; set; }
 		public int HgsNo { get; set; }
 		public decimal balance { get; set; }
 	}

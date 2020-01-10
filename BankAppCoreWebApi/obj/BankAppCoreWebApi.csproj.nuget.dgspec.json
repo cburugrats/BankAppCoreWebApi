@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\msait\\Desktop\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj": {}
+    "C:\\Users\\msait\\Desktop\\RugratWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\msait\\Desktop\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj": {
+    "C:\\Users\\msait\\Desktop\\RugratWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msait\\Desktop\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\msait\\Desktop\\RugratWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj",
         "projectName": "BankAppCoreWebApi",
-        "projectPath": "C:\\Users\\msait\\Desktop\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj",
+        "projectPath": "C:\\Users\\msait\\Desktop\\RugratWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi.csproj",
         "packagesPath": "C:\\Users\\msait\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msait\\Desktop\\BankAppCoreWebApi\\BankAppCoreWebApi\\obj\\",
+        "outputPath": "C:\\Users\\msait\\Desktop\\RugratWebApi\\BankAppCoreWebApi\\BankAppCoreWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,10 +41,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Cors": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
