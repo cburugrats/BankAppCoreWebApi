@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BankAppCoreWebApi.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -53,11 +54,12 @@ namespace BankAppCoreWebApi.Controllers
 					return tempAccount;
 			}
 		}
-		#endregion
+        #endregion
 
-		#region Open An Account
-		// POST api/user
-		[HttpPost]
+        #region Open An Account
+        // POST api/user
+        [EnableCors("CorsPolicy")]
+        [HttpPost]
 		[Route("openAnAccount")]
 		public int PostOpenAnAccount([FromBody] TcIdentityKeyModel tcIdentityKeyModel)
 		{
@@ -101,10 +103,11 @@ namespace BankAppCoreWebApi.Controllers
 					return 0;//Bu tcno ile kayıtlı kullanıcı bulunamadı!
 			}
 		}
-		#endregion
+        #endregion
 
-		#region With Draw Money
-		[HttpPost]
+        #region With Draw Money
+        [EnableCors("CorsPolicy")]
+        [HttpPost]
 		[Route("withDrawMoney")]
 		public int WithDrawMoney([FromBody] AccountNoAndMoney drawMoney)
 		{
@@ -136,10 +139,11 @@ namespace BankAppCoreWebApi.Controllers
 			}
 			return 1;//Para başarıyla yatırıldı.
 		}
-		#endregion
+        #endregion
 
-		#region To Deposit Money
-		[HttpPost]
+        #region To Deposit Money
+        [EnableCors("CorsPolicy")]
+        [HttpPost]
 		[Route("toDepositMoney")]
 		public int toDepositMoney([FromBody] AccountNoAndMoney toDepositMoney)
 		{
@@ -166,11 +170,12 @@ namespace BankAppCoreWebApi.Controllers
 				}				
 			}		
 		}
-		#endregion
+        #endregion
 
-		#region Close Account By AccountNo
-		// DELETE api/values/5
-		[HttpPost]
+        #region Close Account By AccountNo
+        // DELETE api/values/5
+        [EnableCors("CorsPolicy")]
+        [HttpPost]
 		[Route("closeAccount")]
 		public int CloseAccount([FromBody] Account AccountNo)
 		{
